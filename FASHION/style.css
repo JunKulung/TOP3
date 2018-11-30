@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900');
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+section {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron {
+	background-image: url(1.jpg);
+	height: 600px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	text-align: center;
+}
+
+.fixed-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #232323;
+}
+
+nav {
+	padding: 0% 15%;
+	padding-top: 3%;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	list-style: none;
+	flex-basis: 19%;
+	padding: 1%;
+}
+
+nav .icon {
+	margin-left: auto;
+}
+
+nav .icon i {
+	margin-right: 10%;
+}
+
+nav .icon i:hover {
+	color: orangered;
+	cursor: pointer;
+}
+
+.jumbotron h1 {
+	font-size: 120px;
+	color: white;
+	margin-top: 0%;
+	transition: 1.5s;
+	padding-top: 0%;
+}
+
+.jumbotron span {
+	color: orangered;
+	letter-spacing: 1px;
+}
+
+.jumbotron p {
+	color: white;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.jumbotron button {
+	padding: 10px 25px;
+	margin-top: 1%;
+	background-color: transparent;
+	border: 1px solid orangered;
+	color: white;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 300;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn:before {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: orangered;
+	left: 0%;
+	top: 0%;
+	transition: 1s;
+	z-index: 0;
+	opacity: 0;
+}
+
+.jumbotron button:hover .btn:before {
+	width: 100%;
+	content: 'CLICK HERE';
+	cursor: pointer;
+	opacity: 1;
+	padding: 9% 0
+}
+
+.container {
+	position: relative;
+	background-color: orangered;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0% 13%;
+	color: white;
+	transition: 1s;
+}
+
+.navbar li {
+	list-style: none;
+	padding: 2%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.navbar .logo {
+	margin-right: auto;
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav li {
+	list-style: none;
+	padding: 2%;
+	color: white;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+.nav ul li {
+	max-height: 0;
+}
+
+.container input {
+	display: none;
+}
+
+.container .nav {
+	display: none;
+	margin-top: 1em;
+}
+
+.container .fa-times {
+	display: none;
+	transition: 5s;
+}
+
+.container input#button:checked~.nav {
+	display: block;
+}
+
+nav .first-nav {
+	font-size: 10px;
+}
+
+#nav-icon1 {
+	width: 20px;
+	position: absolute;
+	top: 20%;
+	right: 3%;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	display: none;
+}
+
+#nav-icon1 span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: white;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+	top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+	top: 7px;
+}
+
+#nav-icon1 span:nth-child(3) {
+	top: 14px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+	top: 10px;
+	transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+	opacity: 0;
+	left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+	top: 10px;
+	transform: rotate(-135deg);
+}
+
+.first {
+	padding: 4% 15%;
+	text-align: center;
+}
+
+.first h1,
+.third h1 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-size: 45px;
+	letter-spacing: 1px;
+	color: rgb(56, 56, 56);
+}
+
+.first p,
+.third p,
+.contact p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 17px;
+	color: rgb(56, 56, 56);
+}
+
+.second {
+	display: flex;
+	padding: 0% 15%;
+	margin-bottom: 5%;
+}
+
+.second .content {
+	flex-basis: 24%;
+	text-align: center;
+}
+
+.second .content h2 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.second .content p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	letter-spacing: 1px;
+	color: rgb(56, 56, 56);
+}
+
+.third {
+	padding: 4% 15%;
+	text-align: center;
+	background-color: #e6e7e9;
+}
+
+.third p {
+	margin-bottom: 4%;
+}
+
+.thirdcontent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: .5%;
+}
+
+.team {
+	background-color: orangered;
+}
+
+.team h1 {
+	color: rgb(255, 255, 255);
+}
+
+.team p {
+	color: white;
+	font-style: italic;
+}
+
+.blog {
+	justify-content: space-between;
+}
+
+.blog .content p {
+	text-align: center;
+	padding: 4%;
+}
+
+.fourth {
+	background-color: orangered;
+	color: white;
+	padding: 4% 15%;
+	text-align: center;
+}
+
+.fourth h1 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 45px;
+}
+
+.fourth button {
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	padding: 10px 50px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 2px;
+}
+
+.testimonials {
+	background-image: url(13.jpg);
+	font-family: 'Saira Extra Condensed', sans-serif;
+	text-align: center;
+	padding: 4% 15%;
+	color: white;
+}
+
+.testimonials h1 {
+	letter-spacing: 1px;
+	font-size: 45px;
+}
+
+.testimonials img {
+	border-radius: 100px;
+	border: 4px solid rgb(56, 56, 56);
+}
+
+.testimonialsh h2 {
+	letter-spacing: 2px;
+}
+
+.testimonials p {
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.contact {
+	background-color: #e6e7e9;
+	padding: 4% 15%;
+	text-align: center;
+}
+
+.contact h1 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-size: 45px;
+	letter-spacing: 1px;
+	color: rgb(56, 56, 56);
+}
+
+.contact-content {
+	flex-flow: row wrap;
+	display: flex;
+	text-align: left;
+}
+
+.contact-content .content {
+	flex-basis: 48%;
+	margin-top: 4%;
+	margin-bottom: 3%;
+}
+
+.contact-content .content input {
+	width: 95%;
+	height: 35px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	margin-top: 1%;
+}
+
+.contact-content .content textarea {
+	height: 100%;
+	width: 100%;
+}
+
+.contact button {
+	width: 100%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	padding: 10px;
+	background-color: orangered;
+	color: white;
+	border: 1px solid orangered;
+}
+
+footer {
+	background-color: orangered;
+	text-align: center;
+	color: white;
+	padding: 4%;
+}
+
+footer h1 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-size: 45px;
+	letter-spacing: 1px;
+}
+
+footer p {
+	letter-spacing: 3px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+#first-fadein,
+#second-fadein,
+#third-fadein,
+#fourth-fadein,
+#fifth-fadein,
+#sixth-fadein,
+.blog,
+#eighth,
+#last {
+	opacity: 0;
+	transition: .8s;
+}
+
+#third,
+#fourth,
+#fifth {
+	padding-top: 20%;
+	transition: .8s;
+}
+
+#seventh {
+	margin-right: 30%;
+	transition: .8s;
+}
+
+#hover {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	bottom: -30%;
+	width: 100%;
+	transition: .5s;
+}
+
+.overlay h4 {
+	letter-spacing: 3px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#hover:hover .overlay {
+	bottom: 2%;
+}
+
+#third img,
+#imagehover img {
+	transition: .5s;
+}
+
+#third img:hover {
+	transform: scale(.7);
+}
+
+#imagehover img:hover {
+	transform: scale(.7);
+}
+
+.blog .content {
+	position: relative;
+}
+
+.overlay-second {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: .5s;
+}
+
+.blog .content:hover .overlay-second {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.overlay-second h3 {
+	padding-top: 50%;
+	color: white;
+	font-size: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+	nav {
+		padding: 0% 2%;
+		padding-top: 3%;
+	}
+	.navbar ul {
+		padding: 0%;
+		justify-content: center;
+	}
+	.first {
+		padding: 5% 10%;
+		text-align: justify;
+	}
+	.second {
+		padding: 0% 10%;
+		margin-bottom: 5%;
+	}
+	.second .content p {
+		padding: 0% 5%;
+	}
+	.team .thirdcontent .content {
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.blog {
+		flex-flow: column;
+	}
+	.overlay-second {
+		display: none;
+	}
+	.navbar .logo {
+		padding: 1%;
+		padding-left: 10%;
+	}
+	.navbar li {
+		display: none;
+	}
+	.navbar .logo,
+	.container .btn {
+		display: block;
+	}
+	#nav-icon1 {
+		display: block;
+		margin-right: 10%
+	}
+	nav li {
+		font-size: 13px;
+		flex-basis: 40%;
+	}
+	.jumbotron p {
+		font-size: 13px;
+	}
+	.jumbotron h1 {
+		padding-top: 10%;
+		font-size: 90px;
+	}
+	.jumbotron {
+		height: 500px;
+	}
+}

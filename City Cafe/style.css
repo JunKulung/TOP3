@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=Playball|Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900');
+
+
+html {
+scroll-behavior: smooth;
+}
+.icon-right {
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	position: fixed;
+	right: 5%;
+	bottom:10%;
+	z-index: 99;
+	opacity: 0;
+	transition: .5s;
+}
+.icon-right a {
+	color: #80cc0c;
+}
+
+.icon-right i {
+	margin: 20%;
+	font-size: 50px;
+
+}
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+nav {
+	text-align: center;
+	padding: 1.5%;
+}
+
+nav h1 {
+	font-family: 'Playball', cursive;
+	font-size: 50px;
+	color: #80cc0c;
+}
+
+.navbar {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	padding: 1%;
+	z-index: 99;
+}
+
+.navbar li {
+	margin: .2%;
+	padding: 1% 2%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 1px;
+    font-size: 15px;
+   
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.animate:before {
+    content: '';
+  width: 0%;
+    position: absolute;
+    background-color: #80cc0c;
+    height: 3px;
+transition: .5s;
+bottom: -2px;
+}
+.navbar li:hover .animate:before{
+    width: 100%;
+}
+
+
+.active:before {
+	content: '';
+  width: 100%;
+    position: absolute;
+    background-color: #80cc0c;
+    height: 3px;
+transition: .5s;
+bottom: -2px;
+}
+
+section {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron {
+	background-image: url(1.png);
+	height: 600px;
+	text-align: center;
+	opacity: 0;
+	transition: 3s;
+}
+
+.jumbotron h2 {
+	color: white;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	font-size: 70px;
+	margin-top: 5%;
+	font-weight: 500;
+}
+
+.jumbotron p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.fixed-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #232323;
+}
+
+.text-center {
+	text-align: center;
+	padding-top: 1%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	padding: 1% 23%;
+	margin-bottom: 3%;
+	color: gray;
+}
+
+.center {
+	text-align: center;
+	padding-top: 7%;
+	font-family: 'Playball', cursive;
+	font-size: 50px;
+	color: #80cc0c;
+}
+
+.first {
+	display: flex;
+	justify-content: space-between;
+	padding: 0% 10%;
+	margin-bottom: 8%;
+}
+
+#first-fadein {
+	transition: 1s;
+	padding-top: 20%;
+}
+
+.first .content {
+	flex-basis: 49%;
+	overflow: hidden;
+}
+
+.first .content p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	color: gray;
+}
+
+.first .content h3 {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	margin-top: 2%;
+	color: gray;
+}
+
+.second {
+	background-color: rgb(231, 231, 231);
+}
+
+.second-content {
+	display: flex;
+	padding: 1% 10%;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#large-fadein {
+	padding-left: 30%;
+	padding-right: 30%;
+	transition: 1s;
+	opacity: 0;
+}
+
+#second-fadeup {
+	padding-top: 20%;
+	transition: 1s;
+}
+
+.second-content .content {
+	flex-basis: 31%;
+	overflow: hidden;
+	padding: 0 3px;
+	background-color: white;
+}
+
+.second-content .content h2 {
+	font-family: 'Playball', cursive;
+	margin: 5%;
+	color: gray;
+}
+
+.second-content .content p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	color: gray;
+	letter-spacing: 1px;
+	margin-bottom: 4%;
+	padding: 0 5%;
+}
+
+.second-content .content i {
+	color: #80cc0c;
+	font-size: 40px;
+	margin-top: 7%;
+}
+
+.adjust {
+	padding-bottom: 8%;
+}
+
+.third {
+	display: flex;
+	padding: 0% 10%;
+	justify-content: space-between;
+}
+
+.third .content {
+	background-color: rgb(231, 231, 231);
+	flex-basis: 47%;
+	margin-top: 2%;
+}
+
+.third .content h2 {
+	letter-spacing: 1px;
+	color: rgb(75, 75, 75);
+	font-family: 'Saira Extra Condensed', sans-serif;
+	padding: 7% 5% 0;
+}
+
+.third .content .right {
+	float: right;
+	color: #80cc0c;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+.third .content p {
+	color: #80cc0c;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	padding-bottom: 7%;
+	padding-left: 5%;
+}
+
+.fourth {
+	display: flex;
+	justify-content: space-between
+}
+
+.fourth .content {
+	flex-basis: 24.8%;
+	overflow: hidden;
+	position: relative;
+}
+
+.fifth {
+	display: flex;
+	justify-content: space-between;
+	padding: 0% 10%;
+	margin-bottom: 8%;
+}
+
+.fifth .content {
+	flex-basis: 23%;
+	text-align: center;
+}
+
+.fifth .content i {
+	color: #80cc0c;
+	font-size: 40px;
+}
+
+.fifth .content p {
+	font-family: 'Playball', cursive;
+	color: gray;
+	margin: 5%;
+	font-size: 20px;
+}
+
+.fifth .content h1 {
+	font-family: 'Playball', cursive;
+	color: rgb(75, 75, 75);
+}
+
+.sixth {
+	background-color: #232323;
+}
+
+.sixth .white {
+	color: white;
+	font-weight: 100;
+}
+
+.sixth-content {
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	overflow: hidden;
+	padding-bottom: 8%;
+}
+
+#fade-padding {
+	padding-left: 23%;
+	padding-right: 23%;
+	transition: .5s;
+}
+
+.sixth-content .content {
+	flex-basis: 25%;
+	text-align: center;
+}
+
+.sixth-content .content img {
+	border: 2px solid white;
+}
+
+.sixth-content .content h3 {
+	color: #80cc0c;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 500;
+	margin: 3%;
+}
+
+.sixth-content .content p {
+	padding: 0% 10%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+.seventh {
+	background-color: rgb(231, 231, 231);
+	padding: 3% 20%;
+	text-align: center;
+}
+
+.seventh p {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	padding-top: 3%;
+	padding-bottom: 7%;
+	color: gray;
+}
+
+.seventh img {
+	margin: 3%;
+	width: 15%;
+	border-radius: 100px;
+}
+
+.seventh H3 {
+	color: #000000;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+#contact1 {
+	opacity: 0;
+	transition: 1s;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+	padding: 0% 10%;
+	opacity: 0;
+	transition: 1s;
+}
+
+.contact .content {
+	flex-basis: 48%;
+	margin-bottom: 7%;
+}
+
+.contact .content input {
+	width: 100%;
+	margin-bottom: 2%;
+	height: 40px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+.contact .content textarea {
+	width: 100%;
+	height: 65%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+.contact .content button {
+	width: 100%;
+	padding: 2%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+	border: none;
+	background-color: #80cc0c;
+	color: white;
+}
+
+footer {
+	display: flex;
+	padding: 4% 10%;
+	background: #232323;
+	justify-content: space-between;
+}
+
+footer .content {
+	flex-basis: 32%;
+}
+
+footer .content h1 {
+	color: #80cc0c;
+	font-family: 'Playball', cursive;
+}
+
+footer .content p {
+	color: gray;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+footer .content h3 {
+	font-family: 'Playball', cursive;
+	color: gray;
+}
+
+#second-fadein,
+#third-fadeup,
+#fourth-fadeup,
+#fifth-fadeup,
+#sixth-fadeup {
+	padding-top: 20%;
+	transition: .9s;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 99%;
+	width: 100%;
+	color: white;
+	position: absolute;
+	opacity: 0;
+	transition: .5s;
+	text-align: center;
+}
+
+.overlay i {
+	font-size: 50px;
+	padding-top: 40%;
+}
+
+.fourth .content:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+	.text-center {
+		padding: 1% 10%;
+	}
+	.jumbotron {
+		height: 550px;
+	}
+	.first {
+		flex-flow: column;
+	}
+	.sixth-content {
+		flex-flow: column;
+	}
+	.sixth-content .content p {
+		padding: 0% 30%;
+		margin-bottom: 1%;
+	}
+}

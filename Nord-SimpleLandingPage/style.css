@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Khand:300,400,500,600,700');
+body {
+    height: 200vh;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    ;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url(1.jpg);
+    height: 550px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: center;
+    padding: 2% 19%;
+    color: white;
+    transition: 1s;
+}
+
+.jumbotron h1 {
+    text-align: right;
+    font-family: 'Khand', sans-serif;
+    color: #262a34;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 8%;
+    line-height: 2;
+    font-weight: 400;
+    padding-right: 30%;
+    transition: 2s;
+    opacity: 0;
+}
+
+.jumbotron span {
+    color: white;
+}
+
+.jumbotron p {
+    text-align: right;
+    font-family: 'Khand', sans-serif;
+    line-height: 2;
+    margin-top: 2%;
+    letter-spacing: 1px;
+    padding-right: 30%;
+    transition: 2s;
+    opacity: 0;
+}
+
+nav {
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 2s;
+}
+
+nav li {
+    list-style: none;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-family: 'Khand', sans-serif;
+    margin: .1%;
+    font-weight: 400;
+    padding: 10px;
+}
+
+nav .active {
+    background-color: #262a34;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+nav .logo {
+    margin-right: auto;
+    color: #262a34;
+}
+
+.first {
+    background-color: #262a34;
+    padding: 6% 19%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.first h1,
+.second h1 {
+    color: white;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.first .content {
+    flex-basis: 49%;
+    transition: 1s;
+    overflow: hidden;
+    padding-top: 20%;
+}
+
+.first p {
+    font-family: 'Khand', sans-serif;
+    line-height: 2;
+    color: white;
+    padding-right: 25%;
+    margin: 10% 0;
+    letter-spacing: 1px;
+}
+
+.first button {
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid #41e0d8;
+    color: white;
+    font-family: 'Khand', sans-serif;
+}
+
+.first button:hover {
+    background-color: #41e0d8;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.second {
+    background-color: #262a34;
+    padding: 6% 19%;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: 1s;
+}
+
+.second p {
+    color: #262a34;
+    font-family: 'Khand', sans-serif;
+    margin-bottom: 3%;
+    letter-spacing: 1px;
+}
+
+.second .qoute {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.third {
+    background-color: #262a34;
+    padding: 4% 19%;
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+    transition: 1s;
+}
+
+.third h1 {
+    color: white;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.third p {
+    font-family: 'Khand', sans-serif;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+}
+
+.third input {
+    border: 1px solid #3f4146;
+    background-color: #3f4146;
+    height: 27px;
+    width: 30%;
+}
+
+.third button {
+    border: 1px solid white;
+    background-color: white;
+    padding: 4px 30px;
+    font-family: 'Khand', sans-serif;
+    color: #41e0d8;
+}
+
+.third button:hover {
+    transition: .5s;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+footer {
+    text-align: center;
+    padding: 3% 19%;
+}
+
+footer p {
+    font-family: 'Khand', sans-serif;
+    color: #262a34;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .jumbotron {
+        background-image: url(3.jpg);
+        height: 500px;
+    }
+    .jumbotron h1 {
+        text-align: center;
+        margin-top: 12%;
+    }
+    .jumbotron p {
+        text-align: center;
+        font-family: 'Khand', sans-serif;
+    }
+    .first {
+        flex-flow: column;
+    }
+    .first .content {
+        flex-basis: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .first p {
+        color: white;
+        padding-right: 0%;
+        margin: 5% 0;
+    }
+    .first button {
+        margin-bottom: 5%;
+    }
+}

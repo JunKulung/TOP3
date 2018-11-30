@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i|Open+Sans+Condensed:300,300i,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: .5s;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 10%;
+}
+
+nav li {
+    list-style: none;
+    justify-content: end;
+    padding: 25px 7px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0 2px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbotron {
+    background-image: url(1.jpg);
+    height: 600px;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#jumbotron h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 1%;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    transition: 1s;
+}
+
+#jumbotron p {
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 0 25%;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+    font-weight: 100;
+}
+
+#jumbotron button {
+    padding: 8px 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #201a80;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+#jumbotron button:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.firstcontent {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3% 10%;
+}
+
+.firstcontent .content {
+    margin-left: 2%;
+    flex-basis: 64%;
+}
+
+.firstcontent .content-content {
+    flex-basis: 30%;
+}
+
+.firstcontent .content-content img {
+    margin-top: 50%;
+    transition: .5s;
+}
+
+.firstcontent .content h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 3%;
+    color: #201a80;
+    margin-top: 5%;
+}
+
+.firstcontent .content p {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+
+#secondcontent {
+    -webkit-background-size: cover cover;
+    background-size: cover;
+    background: url(4.jpg) no-repeat;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: .8s;
+    margin-left: 50%;
+}
+
+#secondcontent h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding-top: 4%;
+}
+
+#secondcontent p {
+    padding: 1% 10%;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 1%;
+}
+
+#secondcontent button {
+    padding: 8px 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fafafa;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-bottom: 5%;
+}
+
+#secondcontent .active {
+    padding: 8px 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #201a80;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#advantage {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #201a80;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    transition: 1s;
+}
+
+.advantage {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 0% 30%;
+    margin-bottom: 5%;
+}
+
+.thirdcontent i {
+    color: #201a80;
+    font-size: 40px;
+}
+
+.thirdcontent {
+    display: flex;
+    padding: 2% 8%;
+}
+
+.thirdcontent .content {
+    flex-basis: 34%;
+    text-align: center;
+}
+
+.thirdcontent .content h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 3%;
+    color: #201a80;
+}
+
+.thirdcontent .content p {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 0 10%;
+    margin-bottom: 20%;
+    text-align: justify;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0% 30%;
+    transition: 1s;
+}
+
+.projects .content {
+    flex-basis: 23%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.contact-contact {
+    background-color: #201a80;
+    margin-top: 3%;
+    color: white;
+    padding: 2% 11%;
+    text-align: center;
+}
+
+.contact-contact p {
+    letter-spacing: 1px;
+    padding: 3%;
+}
+
+.contact-contact .fa-location-arrow {
+    font-size: 40px;
+    margin-right: 8%;
+}
+
+.contact-contact span {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.contact-contact button {
+    margin-left: 7%;
+    padding: 8px 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fafafa;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0% 11%;
+    margin-top: 5%;
+}
+
+.contact .content-content {
+    flex-basis: 40%;
+}
+
+.contact .content {
+    flex-basis: 57%;
+    margin-left: 2%;
+}
+
+.contact .content-content h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #201a80;
+}
+
+.contact .content-content i {
+    color: #201a80;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+.contact .content-content p {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 15%;
+}
+
+.contact-contact p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.contact-contact .left {
+    float: right;
+}
+
+#about,
+#contact {
+    opacity: 0;
+    transition: .8s;
+}
+
+@media only screen and (max-width: 800px) {
+    .firstcontent,
+    .thirdcontent {
+        flex-flow: column;
+    }
+    #jumbotron {
+        height: 400px;
+    }
+    .firstcontent .content-content img {
+        margin-top: 5%;
+        width: 90%;
+    }
+    .firstcontent .content-content {
+        text-align: center;
+    }
+    #advantage {
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    .advantage {
+        padding: 0% 10%;
+        margin-bottom: 5%;
+        text-align: justify;
+    }
+    .projects .content {
+        flex-basis: 48%;
+        margin: 1%;
+        overflow: hidden;
+    }
+    .contact-contact span {
+        font-size: 12px;
+    }
+    .contact-contact .fa-location-arrow {
+        font-size: 20px;
+        margin-right: 8%;
+    }
+    .contact-contact button {
+        margin-left: 7%;
+        padding: 5px 20px;
+    }
+    .contact {
+        margin: 5%;
+        padding: 0%;
+        margin-top: 5%;
+    }
+    .contact .content-content {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .contact .content-content p {
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin-top: 5%;
+    }
+}
